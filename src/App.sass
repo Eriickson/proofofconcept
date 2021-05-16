@@ -1,0 +1,337 @@
+@import './fonts.sass'
+
+#root
+  min-height: 100vh
+
+  .ms-Grid
+    max-width: 100%
+    width: 100%
+
+  .ms-Grid:first-of-type
+    position: relative
+    padding: 0 0 514px 0
+    font-family: Barlow
+
+    .ms-Grid-row
+      margin: 0
+
+      &:first-of-type
+        button:first-of-type
+          margin-left: 0px
+
+  #main-element
+    padding: 16px 56px
+
+h2
+  font-weight: 800
+  font-size: 32px
+  line-height: 40px
+  margin-bottom: 16px !important
+
+h3
+  font-size: 16px
+  font-weight: 500
+  line-height: 22px
+  margin: 0 0 25px 0
+  i,
+  span
+    margin-right: 16px
+
+h4
+  font-family: Barlow
+a
+  text-decoration: none
+
+p
+  &.description
+    font-size: 24px
+    line-height: 32px
+
+.ms-Button
+  cursor: pointer
+  outline: none
+  border-radius: 12px
+
+.ms-Nav
+  .ms-Nav-compositeLink
+    &.is-selected
+      button
+      background: #F3F7F9
+    &:hover
+      button
+        background: #F3F7F9
+
+  button
+    border-radius: 0
+    border: 0
+dt
+  font-weight: bold
+  margin: 10px 0
+  font-weight: 600
+  font-size: 14px
+  line-height: 20px
+dd
+  margin-left: 0
+  font-size: 14px
+  font-weight: normal
+  line-height: 20px
+ul
+  list-style: none
+  padding: 0
+  li
+    margin: 2px 0
+
+.button
+  border-radius: 100px
+  font-weight: 600
+  font-size: 14px
+  line-height: 20px
+  text-align: center
+  padding: 17px 39px 19px
+
+.separator
+  margin-top: 40px
+  margin-bottom: 40px
+
+.shadow
+  border-radius: 16px
+  padding: 48px
+  margin: 20px 10px
+  &.medium
+    padding: 32px
+
+div.blue
+  padding: 19px
+  border-radius: 8px
+  font-weight: 500
+  font-size: 14px
+  line-height: 20px
+  span
+    font-weight: 500
+    font-size: 16px
+    line-height: 22px
+  > span
+    margin-bottom: 4px
+
+.ms-Grid
+  padding: 0 16px
+  min-height: 100vh
+
+.ms-Nav-compositeLink.is-selected a
+  background: none
+
+  .ms-Button-flexContainer::after
+    border-left: 0
+    border-bottom: 3px solid #cc214f
+
+.ms-Grid-col
+  padding-left: 0
+  margin-left: 0
+
+.ms-Viewport
+  margin: 0 1.5%
+
+.ms-FocusZone
+  padding: 0
+
+.icon
+  width: 20px
+  height: 20px
+
+.highcharts-legend-item
+  rect
+    rx: 0
+    ry: 0
+
+.flash
+  padding: 2em
+  &.info
+    background: blue
+  &.success
+    background: green
+  &.warning
+    background: yellow
+  &.error
+    background: red
+
+.back-link
+  color: #93AEB9
+  font-weight: 600
+  font-size: 14px
+  &:before
+    font-family: 'ironia_store'
+    font-weight: normal
+    font-size: 15px
+    content: "d"
+    margin-right: 10px
+
+.summary
+  background: #CC214F !important
+  border-radius: 24px
+  color: #FFF
+  h3
+    font-weight: 800
+    font-size: 24px
+    line-height: 32px
+  > span
+    line-height: 44px
+    font-size: 12px
+  [role='separator']
+    opacity: 0.2
+  .total
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    margin-top: 10px
+    margin-bottom: 20px
+  button
+    width: 100% 
+
+.ms-TextField-fieldGroup,
+.ms-ComboBox:after
+  border: 1px solid #95A0A1
+  box-sizing: border-box
+  border-radius: 4px
+  height: 40px
+
+.ms-TextField-fieldGroup,
+.ms-Dropdown span,
+.ms-ComboBox input
+    border-radius: 4px
+.ms-Dropdown,
+.ms-ComboBox
+  height: 40px
+  input,
+  span
+    height: 40px
+    i
+      line-height: 40px
+      height: 40px
+    &.ms-Dropdown-title
+      line-height: 37px
+.msDatePickerDisabled
+  top: 3px
+
+.ms-Label:after
+  color: #556769
+
+span
+  font-family: "Barlow" !important
+  &.right
+    float: right
+
+.ms-Persona
+  .ms-Persona-coin
+    width: fit-content
+    .ms-Persona-imageArea
+      .ms-Persona-initials
+      .ms-Persona-presence
+  .ms-Persona-details
+    .ms-Persona-primaryText
+      .ms-TooltipHost
+        font-weight: 700
+    .ms-Persona-secondaryText
+      .ms-TooltipHost
+        font-size: 14px
+        font-weight: 500
+        line-height: 18px
+        &:after
+          content: '['
+          font-family: 'ironia_store'
+          font-style: normal
+          font-size: 18px
+          margin-left: 8px
+    .ms-Persona-tertiaryText
+    .ms-Persona-optionalText
+  &.ms-Persona--size32
+    .ms-Persona-coin
+      .ms-Persona-imageArea
+        .ms-Persona-initials
+          span
+            line-height: 20px
+        .ms-Persona-presence
+          width: 10px
+          height: 10px
+          top: 22px
+          left: 22px
+  &.warning
+    .ms-Persona-imageArea
+      .ms-Persona-presence
+        border: none
+        box-sizing: border-box
+        background: transparent
+        top: 17px
+        left: 12px
+        &:before
+          content: ''
+          background: #FFE175
+          width: 16px
+          height: 16px
+          background: linear-gradient(to bottom right, transparent 0%, transparent 50%, #FFE175 50%, #FFE175 100%)
+          display: block
+          top: 20px
+          position: absolute
+          left: 6px
+          transform: scaleX(0.55) rotate(225deg)
+          transform-origin: 0 0
+        &:after
+          content: '\\'
+          font-family: 'ironia_store'
+          font-style: normal
+          font-size: 16px
+          color: #F79A2D
+          position: absolute
+          top: -5px
+          left: -2px
+    .ms-Persona-details
+      .ms-Persona-secondaryText
+        .ms-TooltipHost
+          font-size: 12px
+          color: #F69A2D
+
+.ms-Nav-compositeLink
+  .ms-Nav-linkText
+    margin-left: 16px
+  &.is-selected
+    .ms-Icon
+      i
+        color: #FFFFFF
+
+.ms-Dialog-main
+  &.video-container
+    overflow: visible
+    .ms-Modal-scrollableContent
+      overflow: visible
+
+@media (max-width: 640px)
+  #root
+    min-height: unset
+    .ms-Grid
+      min-height: unset
+      padding: 0 !important
+      &:first-of-type
+        .ms-Grid-row:first-of-type
+          button:first-of-type
+            margin-left: 0
+  h2
+    font-size: 24px
+    line-height: 32px
+
+  .hiddenSm
+    display: none
+  .hiddenSmUp
+    display: block
+
+@media (min-width: 640px)
+  .tight > *
+    max-width: 1200px
+    margin-left: auto !important
+    margin-right: auto !important
+  .strait > *
+    max-width: 900px
+    margin-left: auto !important
+    margin-right: auto !important
+  .hiddenSm
+    display: block
+  .hiddenSmUp
+    display: none

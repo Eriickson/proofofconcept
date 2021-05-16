@@ -1,0 +1,142 @@
+#main-element
+  background: url('/images/background_logo.svg')
+  background-size: cover
+
+table.subscriptions
+  border-collapse: collapse
+  width: 100%
+
+  tr
+    border-bottom: 1px solid rgba(147, 174, 185, 0.2)
+
+    th,
+    td
+      text-align: center
+      &.recommended
+        background: #CC214F
+  thead
+    tr
+      th
+        .attribute
+          padding: 12px 0
+          height: 24px
+          > *
+            border-radius: 100px
+            font-size: 10px
+            padding: 5px 12px
+            margin-top: 12px
+            text-transform: uppercase
+            width: fit-content
+            margin: 0 auto
+
+          .free-days
+            background: #FFFFFF
+            border: 1px solid #E9EFF1
+            color: #93AEB9
+          .recommended
+            background: #FFE175
+            border-radius: 100px
+            color: #CC214F
+        .name
+          font-size: 24px
+          line-height: 32px
+          text-align: center
+          color: #2A4143
+        .description
+          font-weight: 500
+          font-size: 14px
+          line-height: 20px
+          text-align: center
+          color: #2A4143
+          opacity: 0.6
+        .price
+          font-weight: 600
+          font-size: 32px
+          line-height: 40px
+          color: #2A4143
+          margin: 8px 0
+          span
+            font-size: 20px
+            line-height: 28px
+            opacity: 0.5
+        .action
+          margin: 12px auto 21.5px
+          a
+            width: 208px
+            display: block
+            padding: 18px 0
+            margin: 21px auto
+            text-decoration: none
+        &.recommended
+          .name,
+          .description,
+          .price
+            color: #FFFFFF
+          .action
+            a
+              background: #FFFFFF
+              color: #CC214F
+      th
+        &:first-child
+          border-right: 1px solid rgba(147, 174, 185, 0.2)
+      &:first-child
+        border-bottom: 0
+        th
+          border-right: 0
+          &.recommended
+            border-radius: 14px 14px 0 0
+  tbody
+    tr
+      td
+        padding: 8px
+        .ironia-icon
+          display: inline-block
+          border-radius: 20px
+          padding: 6px 7.5px
+          &:after
+            font-size: 16px
+          &.check
+            background: #BEFBD6
+            color: #1BB3AD
+          &.cross
+            background: #E9EFF1
+            color: #93AEB9
+        &.recommended
+          .ironia-icon
+            &.check
+              background: #FFFFFF
+              color: #CC214F
+            &.cross
+              background: rgba(255, 255, 255, 0.2)
+              color: white
+
+        &:first-child
+          text-align: left
+          font-weight: 500
+          font-size: 12px
+          line-height: 16px
+          color: #2A4143
+          padding: 15px 40px 17px 8px
+          border-right: 1px solid rgba(147, 174, 185, 0.2)
+      &:last-child
+        border-bottom: 0
+
+        td
+          height: 31.5px
+          padding: 0
+          &.recommended
+            border-radius: 0 0 14px 14px
+          &:first-child
+            border-right: 0
+
+form
+  .ms-Stack
+    > .ms-Stack:not(:first-child)
+      margin-top: 20px !important
+    .ms-StackItem
+      width: 50%
+      &:not(:first-child)
+        margin-left: 8px
+    input
+      line-height: 40px
+      border-radius: 4px

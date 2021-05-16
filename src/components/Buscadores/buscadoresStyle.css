@@ -1,0 +1,52 @@
+
+
+.title {
+    width: 286px !important;
+    margin-top:30px;
+    margin-bottom: 15px;
+    font-size:32px;
+    line-height:40px;
+    font-weight:800;
+    color: #2A4143
+}
+
+.divInicial {
+    margin-top:30px;
+    margin-left: 56px;
+    margin-right: 56px;
+}
+
+.titleCads {
+    width: 131px;
+    height: 16px;
+    left: 56px;
+    margin-top: 16px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.divImage {
+    width: 152px;
+    height: 88px;
+    margin-top:30px;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.containerImgCard {
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.centeredTextCard {
+    position: absolute;
+    background-color: #E9EFF1;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

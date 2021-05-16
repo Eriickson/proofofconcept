@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'ironia_store';
+  src: local('ironia_store'), url(./fonts/ironia_store.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: ironia_store;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
